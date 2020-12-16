@@ -89,7 +89,7 @@
 	const requestData = async () => {
 		let week = await d3.csv("../cleaned_restaurants.csv");
 		let inspection = await d3.csv("../cleaned_violations.csv");
-		let nyc = await d3.json("nyc.geojson")
+		let nyc = await d3.json("../nyc.geojson")
 
 		//projection, path, svg view
 		var projection = d3.geoConicConformal()
