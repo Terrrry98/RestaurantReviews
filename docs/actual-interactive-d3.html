@@ -87,8 +87,8 @@
 
 	// if do not want the mouse on and mouse leave events, delete them from the following function.
 	const requestData = async () => {
-		let week = await d3.csv("cleaned_restaurants.csv");
-		let inspection = await d3.csv("cleaned_violations.csv");
+		let week = await d3.csv("../cleaned_restaurants.csv");
+		let inspection = await d3.csv("../cleaned_violations.csv");
 		let nyc = await d3.json("nyc.geojson")
 
 		//projection, path, svg view
