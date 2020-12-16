@@ -131,7 +131,6 @@
 
 		// Create color scale and legend
 		let maxViolations = d3.max(Object.values(week), function (d) { return parseInt(d.violation_count); });
-		console.log(maxViolations);
 		const colorScale = d3.scaleQuantile()
 			.domain([1, maxViolations])
 			.range(["#F08080", "#DC143C", "#B22222", "#8B0000"]);
